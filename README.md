@@ -88,12 +88,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Volvemos a la pantalla principal
-    function returnToLogin() {
+   function returnToLogin() {
         const successMessage = document.querySelector(".success");
         const loginForm = document.querySelector(".login");
 
         successMessage.style.display = "none";
-        loginForm.style.display = "flex";
+        loginForm.style.display = "grid";
     }
 
     media();
