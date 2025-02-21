@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const loginForm = document.querySelector(".login");
 
         successMessage.style.display = "none";
-        loginForm.style.display = "flex";
+        loginForm.style.display = "grid";
     }
 
     media();
