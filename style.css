@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --Color-Red: hsl(4, 100%, 67%);
     --Color-Red: rgba(255, 84, 120, 1);
     --Color-Orange: rgba(255, 103, 62, 1);
     --Color-Blue-800: hsl(234, 29%, 20%);
     --Color-Blue-700: hsl(235, 18%, 26%);
     --Color-Grey: hsl(0, 0%, 79%);
     --Color-White: hsl(0, 0%, 100%);
-    --Color-a: hsl(228, 45%, 44%);
     --Font-paragraph: 14px;
-    --Font-sucess: 13px;
+    --Font-success: 13px;
+    --Font-success-600: 15px;
     --Font-small: 11px;
     --Weights700: 700;
     --Weights400: 400;
@@ -55,7 +54,6 @@ input {
     all: unset;
     margin: 0;
     padding: 0;
-
 }
 
 ol {
@@ -84,8 +82,10 @@ input {
 
 .email-label-container {
     display: flex;
-    align-items: center; /* Alinea verticalmente */
-    justify-content: space-between; /* Separa label y error */
+    align-items: center;
+    /* Alinea verticalmente */
+    justify-content: space-between;
+    /* Separa label y error */
     width: 100%;
 }
 
@@ -93,10 +93,11 @@ input {
     color: red;
     font-size: 11px;
     font-weight: 500;
-    margin-left: 10px; /* Espacio entre el label y el mensaje */
-    white-space: nowrap; /* Evita que el texto se divida en dos líneas */
+    margin-left: 10px;
+    /* Espacio entre el label y el mensaje */
+    white-space: nowrap;
+    /* Evita que el texto se divida en dos líneas */
 }
-
 
 button {
     border: none;
@@ -155,9 +156,9 @@ li img {
 .success {
     display: none;
     flex-direction: column;
-   justify-content: space-between;
+    justify-content: space-between;
     max-width: 420px;
-    font-size: var(--Font-sucess);
+    font-size: var(--Font-success);
     place-content: center;
     margin: auto;
     padding: 4.5rem 2rem;
@@ -183,7 +184,7 @@ footer {
 }
 
 @media screen and (min-device-width: 600px) {
-    body{
+    body {
         place-content: center;
     }
 }
@@ -193,24 +194,24 @@ footer {
         grid-template-columns: 1fr;
         padding: 0;
         grid-template-areas:
-        "image"
-        "text";
+            "image"
+            "text";
         gap: 0rem;
     }
-    
-    .success, .login {
+
+    .success,
+    .login {
         border-radius: 0;
         height: 100vh;
         margin-top: -3rem;
     }
 
-    
-.success{
-    max-width: 800px;
-    justify-content: space-between;
-    padding-top: 10rem;
-    font-size: 15px;
-}
+    .success {
+        max-width: 800px;
+        justify-content: space-between;
+        padding-top: 10rem;
+        font-size: var(--Font-success-600);
+    }
 
     .text {
         padding: 2rem;
